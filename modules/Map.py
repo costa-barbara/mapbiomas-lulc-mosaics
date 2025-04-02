@@ -2,7 +2,8 @@
 
 import ee, folium
 
-ee.Initialize()
+ee.Authenticate()
+ee.Initialize(project= "mapbiomas-brazil")
 # class Map():
 
 def addLayer(eeObject, visParams={}, name='layer'):
