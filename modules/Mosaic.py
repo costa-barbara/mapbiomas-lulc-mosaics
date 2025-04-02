@@ -3,7 +3,8 @@ import ee
 from modules.BandNames import getBandNames
 from pprint import pprint
 
-ee.Initialize()
+ee.Authenticate()
+ee.Initialize(project= "mapbiomas-brazil")
 
 
 def getMosaic(
